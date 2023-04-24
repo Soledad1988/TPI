@@ -11,7 +11,7 @@ public class BaseDeDatos {
 			
 			String url = "jdbc:mysql://localhost:3306/partidosbd";
 			String usuario = "root";
-			String password = "Melek2010*";
+			String password = "*******";
 			
 			
 			Connection conexion=DriverManager.getConnection(url, usuario, password);
