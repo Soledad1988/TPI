@@ -1,18 +1,26 @@
 package miProjectoMaven.Model;
 
 public class Persona {
-
+	
+	int id;
 	private String nombre;
     private Pronostico [] prodePersona;
     
     public Persona() {    }
     
-    public Persona(String nombre, Pronostico[] prodePersona) {
+    public Persona(int id, String nombre, Pronostico[] prodePersona) {
+    	this.id = id;
         this.nombre = nombre;
         this.prodePersona = prodePersona;
     }
     
-    public String getNombre() {
+    //constructor requerido
+    public Persona(int id, String nombre) {
+    	this.id = id;
+        this.nombre = nombre;
+	}
+
+	public String getNombre() {
         return nombre;
     }
     public void setNombre(String nombre) {

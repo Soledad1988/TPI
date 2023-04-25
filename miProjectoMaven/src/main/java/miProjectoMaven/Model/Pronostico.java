@@ -17,7 +17,12 @@ public class Pronostico {
 	        this.participante = participante;
 	    }
 
-	    public Partido getPartido() {
+	    //constructores requeridos
+	    public Pronostico(Partido partido2, Equipo equipo2, String string, String string2) {
+			// TODO Auto-generated constructor stub
+		}
+
+		public Partido getPartido() {
 	        return partido;
 	    }
 
