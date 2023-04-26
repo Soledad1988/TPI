@@ -1,12 +1,15 @@
 package miProjectoMaven.Model;
 
+import java.util.Scanner;
+
 public class Pronostico {
 
-	  private Partido partido;
+	 private static final int alo = valoracierto();
+		private Partido partido;
 	    private Equipo equipo;
 	    private ResultadoEnum resultado;
 	    private Persona participante;
-
+	    
 	    public Pronostico() {
 	    }
 
@@ -17,12 +20,7 @@ public class Pronostico {
 	        this.participante = participante;
 	    }
 
-	    //constructores requeridos
-	    public Pronostico(Partido partido2, Equipo equipo2, String string, String string2) {
-			// TODO Auto-generated constructor stub
-		}
-
-		public Partido getPartido() {
+	    public Partido getPartido() {
 	        return partido;
 	    }
 
@@ -54,11 +52,22 @@ public class Pronostico {
 	        this.participante = participante;
 	    }
 
+	    
+	    public static int valoracierto() {					//pedimos por teclado el valor de cada acierto
+	    	
+	    	System.out.print("Ingrese valor por acierto: ");
+	    	int ind = new Scanner(System.in).nextInt();
+	    	
+	    	return ind;
+	    }
+	    
 	    public int puntos (){
-	        if(partido.resultado(equipo) == resultado) {
-	            return 1;  //Si el resultado pronosticado del equipo es igual al resultado del equipo suma un punto
+	    	    		
+	        	if(partido.resultado(equipo) == resultado) {
+	            return alo;  //Si el resultado pronosticado del equipo es igual al resultado del equipo suma un punto
 	        } else {
 	            return 0; //Si es diferente no suma nada
 	        }
 	    }
+	
 }
