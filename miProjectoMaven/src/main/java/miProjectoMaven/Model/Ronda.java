@@ -10,7 +10,10 @@ public class Ronda {
 	        this.nro = nro;
 	        this.partidos = partidos;
 	    }
-	    public String getNro() {
+	    public Ronda(String string, Partido[] vectorPartidos, int i) {
+			// TODO Auto-generated constructor stub
+		}
+		public String getNro() {
 	        return nro;
 	    }
 	    public void setNro(String nro) {

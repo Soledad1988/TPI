@@ -100,8 +100,7 @@ public static Partido cargarPartidos(Equipo equipo1, Equipo equipo2, String[] ar
 		
 		return arrayPersona;
 	}
- 
- 
+
  
  
  public static void main(String[] args) throws Exception{
